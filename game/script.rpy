@@ -22,7 +22,7 @@ define backend = 0
 # Игра начинается здесь:
 label start:
 
-    scene bg room
+    scene scene_prev
     with fade
 
     show petr
@@ -33,7 +33,7 @@ label start:
 
 label scene_1:
 
-    scene bg room
+    scene scene_1
     with fade
 
     show maxim
@@ -104,7 +104,7 @@ label scene_whynot:
 
 label scene_2:
 
-    scene bg room
+    scene scene_2
     with fade
 
     show elena    
@@ -136,7 +136,8 @@ label scene_2:
 
 label scene_3:
 
-    scene bg_room
+    scene scene_3
+    with fade
 
     show denis
     denis "Тихо. Сервер думает..."
@@ -165,7 +166,8 @@ label scene_3:
 
 label scene_4:
 
-    scene bg_room
+    scene scene_4
+    with fade
 
     show maxim
     maxim "Нужно реализовать регистрацию. Лена делает форму, Денис — базу с пользователями. Ты связываешь всё это."
@@ -196,7 +198,8 @@ label scene_4:
 
 label scene_5:
 
-    scene bg_room
+    scene scene_5
+    with fade
 
     show petr
     petr "Почему сервер не принимает запрос?!"
@@ -229,7 +232,8 @@ label scene_5:
 
 label scene_6:
 
-    scene bg_room
+    scene scene_6
+    with fade
 
     show irina
     irina "Клиенты хотят загружать видео напрямую. Что будем делать?"
@@ -261,7 +265,8 @@ label scene_6:
 
 label scene_7:
 
-    scene bg_room
+    scene scene_7
+    with fade
 
     show maria
     maria "В Safari падает регистрация!"
@@ -294,7 +299,8 @@ label scene_7:
 
 label scene_8:
 
-    scene bg_room
+    scene scene_8
+    with fade
 
     show elena
     elena "Денис опять поменял формат API! Всё сломалось!"
@@ -322,7 +328,8 @@ label scene_8:
 
 label scene_9:
 
-    scene bg_room
+    scene scene_9
+    with fade
 
     show maxim
     maxim "Сейчас самое страшное — выкладывать в прод."
@@ -355,7 +362,8 @@ label scene_9:
 
 label scene_10:
 
-    scene bg_room
+    scene scene_10
+    with fade
 
     show irina
     irina "Пользователи довольны! Всё работает. Петя, чему научился?"
@@ -369,7 +377,7 @@ label scene_10:
         elena "Добро пожаловать в наш клуб перфекционистов!"
         hide elena
 
-    elif (backend > fronted) & (backend > balance):
+    elif (backend > frontend) & (backend > balance):
         show petr
         petr "Я осознал, что стабильность и логика — основа всего. Фронт можно поменять, но архитектура должна быть прочной."
         hide petr
