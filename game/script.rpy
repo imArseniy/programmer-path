@@ -1,12 +1,12 @@
 ﻿# Вы можете расположить сценарий своей игры в этом файле.
 
 # Определение персонажей игры.
-define petr = Character('Петя', color='#007bff')
-define maxim = Character('Макс', color='#1c6f00')
-define elena = Character('Лена', color='#ff1e7f')
-define denis = Character('Денис', color='#44009d')
-define irina = Character('Ирина', color='#eb3a3a')
-define maria = Character('Маша', color='#ffa544')
+define petr = Character('Петя', color='#ffffff')
+define maxim = Character('Макс', color='#f6eeff')
+define elena = Character('Лена', color='#fff3f8')
+define denis = Character('Денис', color='#f7f1ff')
+define irina = Character('Ирина', color='#ffebeb')
+define maria = Character('Маша', color='#fdf3ff')
 
 # Вместо использования оператора image можете просто
 # складывать все ваши файлы изображений в папку images.
@@ -367,6 +367,7 @@ label scene_10:
 
     show irina
     irina "Пользователи довольны! Всё работает. Петя, чему научился?"
+    hide irina
 
     if (frontend > backend) & (frontend > balance):
         show petr
@@ -396,7 +397,7 @@ label scene_10:
         hide maxim
 
     window hide
-    scene poster1 with fade
+    scene poster_end with fade
     pause
     "Конец."
 

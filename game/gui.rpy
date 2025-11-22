@@ -26,55 +26,55 @@ define config.check_conflicting_properties = True
 ## Цвета текста в интерфейсе.
 
 ## Акцентный цвет используется в заголовках и подчёркнутых текстах.
-define gui.accent_color = '#0099ff'
+define gui.accent_color = '#ffffff'
 
 ## Цвет, используемый в текстовой кнопке, когда она не выбрана и не наведена.
-define gui.idle_color = '#707070'
+define gui.idle_color = '#ffffff'
 
 ## Small_color используется в маленьком тексте, который должен быть ярче/
 ## темнее, для того, чтобы выделяться.
-define gui.idle_small_color = '#606060'
+define gui.idle_small_color = '#cdcdcd'
 
 ## Цвет, используемых в кнопках и панелях, когда они наведены.
-define gui.hover_color = '#0099ff'
+define gui.hover_color = '#D7BBF5'
 
 ## Цвет, используемый текстовой кнопкой, когда она выбрана, но не наведена.
 ## Кнопка может быть выбрана, если это текущий экран или текущее значение
 ## настройки.
-define gui.selected_color = '#555555'
+define gui.selected_color = '#ffffff'
 
 ## Цвет, используемый текстовой кнопкой, когда она не может быть выбрана.
-define gui.insensitive_color = '#7070707f'
+define gui.insensitive_color = '#ffffff7f'
 
 ## Цвета, используемые для частей панелей, которые не заполняются. Они
 ## используются не напрямую, а только при воссоздании файлов изображений.
-define gui.muted_color = '#66c1ff'
-define gui.hover_muted_color = '#99d6ff'
+define gui.muted_color = '#D7BBF5'
+define gui.hover_muted_color = '#EDE4FF'
 
 ## Цвета, используемые в тексте диалогов и выборов.
-define gui.text_color = '#404040'
-define gui.interface_text_color = '#404040'
+define gui.text_color = '#000000'
+define gui.interface_text_color = '#ffffff'
 
 
 ## Шрифты и их размеры #########################################################
 
 ## Шрифт, используемый внутриигровым текстом.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "Tektur-Regular.ttf"
 
 ## Шрифт, используемый именами персонажей.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "Tektur-Bold.ttf"
 
 ## Шрифт, используемый текстом вне игры.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "Tektur-Regular.ttf"
 
 ## Размер нормального текста диалога.
-define gui.text_size = 33
+define gui.text_size = 32
 
 ## Размер имён персонажей.
-define gui.name_text_size = 45
+define gui.name_text_size = 48
 
 ## Размер текста в пользовательском интерфейсе.
-define gui.interface_text_size = 33
+define gui.interface_text_size = 32
 
 ## Размер заголовков в пользовательском интерфейсе.
 define gui.label_text_size = 36
@@ -98,23 +98,23 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## Эти переменные контролируют, как диалог появляется на отдельной строчке.
 
 ## Высота текстового окна, содержащего диалог.
-define gui.textbox_height = 278
+define gui.textbox_height = 200
 
 ## Местоположение текстового окна по вертикали экрана. 0.0 — верх, 0.5 — центр
 ## и 1.0 — низ.
-define gui.textbox_yalign = 1.0
+define gui.textbox_yalign = 0.95
 
 
 ## Местоположение имени говорящего персонажа по отношению к текстовому окну.
 ## Это могут быть целые значения в пикселях слева и сверху от начала окна или
 ## процентное отношение, например, 0.5 для центрирования.
-define gui.name_xpos = 360
-define gui.name_ypos = 0
+define gui.name_xpos = 520
+define gui.name_ypos = -47
 
 ## Горизонтальное выравнивание имени персонажа. Это может быть 0.0 для
 ## левоориентированного, 0.5 для центрированного и 1.0 для правоориентированного
 ## выравнивания.
-define gui.name_xalign = 0.0
+define gui.name_xalign = 0.5
 
 ## Ширина, высота и границы окна, содержащего имя персонажа или None, для
 ## автоматической размерки.
@@ -123,7 +123,7 @@ define gui.namebox_height = None
 
 ## Границы окна, содержащего имя персонажа слева, сверху, справа и снизу по
 ## порядку.
-define gui.namebox_borders = Borders(5, 5, 5, 5)
+define gui.namebox_borders = Borders(32, 16, 32, 16)
 
 ## Если True, фон текстового окна будет моститься (расширяться по эффекту
 ## плитки). Если False, фон текстового окна будет фиксированным.
@@ -133,11 +133,11 @@ define gui.namebox_tile = False
 ## Размещение диалога по отношению к текстовому окну. Это могут быть целые
 ## значения в пикселях слева и сверху от текстового окна или процентное
 ## отношение, например, 0.5 для центрирования.
-define gui.dialogue_xpos = 402
-define gui.dialogue_ypos = 75
+define gui.dialogue_xpos = 420
+define gui.dialogue_ypos = 56
 
 ## Максимальная ширина текста диалога в пикселях.
-define gui.dialogue_width = 1116
+define gui.dialogue_width = 1072
 
 ## Горизонтальное выравнивание текста диалога. Это может быть 0.0 для
 ## левоориентированного, 0.5 для центрированного и 1.0 для правоориентированного
